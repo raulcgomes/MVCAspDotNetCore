@@ -14,6 +14,6 @@ namespace MVCAspDotNetCore.Models
 
         public string Descricao { get; set; }
 
-        public List<Produto> Produtos { get; set; }
+        //public List<Produto> Produtos { get; set; }
     }
 }
