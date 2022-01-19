@@ -21,7 +21,7 @@ namespace TestAspDotNetCore
         {
             _mockSet = new Mock<DbSet<Categoria>>();
             _mockContext = new Mock<Context>();
-            _categoria = new Categoria { Id = 1, Descricao = "Teste Categoria" };
+            _categoria = new Categoria { Id = 4, Descricao = "Cat 2" };
 
             _mockContext.Setup(m => m.Categorias).Returns(_mockSet.Object);
 

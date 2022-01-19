@@ -10,9 +10,9 @@ namespace MVCAspDotNetCore.Models
     {
         private string connectionString = @"Server=localhost\SQLEXPRESS;Database=MVCAspDotNetCore;Integrated Security=True";
 
-        public DbSet<Categoria> Categorias { get; set; }
+        public virtual DbSet<Categoria> Categorias { get; set; }
 
-        public DbSet<Produto> Produtos { get; set; }
+        public virtual DbSet<Produto> Produtos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
