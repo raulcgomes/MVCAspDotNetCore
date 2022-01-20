@@ -51,7 +51,7 @@ namespace APIAspDotNetCore.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(produto).State = EntityState.Modified;
+            _context.SetModified(produto);
 
             try
             {

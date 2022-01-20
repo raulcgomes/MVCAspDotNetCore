@@ -18,5 +18,10 @@ namespace MVCAspDotNetCore.Models
         {
             optionsBuilder.UseSqlServer(connectionString: connectionString);
         }
+
+        public virtual void SetModified(object entity)
+        {
+            Entry(entity).State = EntityState.Modified;
+        }
     }
 }
